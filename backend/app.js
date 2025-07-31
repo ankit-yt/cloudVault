@@ -4,7 +4,6 @@ const app = express()
 app.use(express.json())
 const cors = require('cors')
 app.use(cors({
-	origin: "http://localhost:5173",  // Allow frontend origin
 	origin: "https://cloud-vault-gamma.vercel.app/",  // Allow frontend origin
 	credentials: true  // Allow cookies to be sent
   }));
