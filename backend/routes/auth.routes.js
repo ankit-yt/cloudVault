@@ -14,7 +14,7 @@ router.get('/dropbox/callback', async (req, res) => {
 		  grant_type: 'authorization_code',
 		  client_id: 'bsdwapln8fyz71n',
 		  client_secret: 'drb5erhz8nt6bas',
-		  redirect_uri: 'http://localhost:3000/auth/dropbox/callback'
+		  redirect_uri: 'https://cloudvault-jk10.onrender.com/auth/dropbox/callback'
 		},
 		headers: {
 		  'Content-Type': 'application/x-www-form-urlencoded'
