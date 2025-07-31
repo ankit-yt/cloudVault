@@ -7,8 +7,7 @@ import Signup from "./pages/Signup";
 import Login from "./pages/Login";
 import Documents from "./pages/Documents";
 import Dashboard from "./pages/Dashboard";
-import Music from "./pages/Music";
-import Navbar from "./pages/navbar";
+import Music from "./pages/Music"
 import Photos from "./pages/Photos";
 import Sidebar from "./pages/Sidebar";
 import Videos from "./pages/Videos";
