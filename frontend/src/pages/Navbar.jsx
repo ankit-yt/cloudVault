@@ -27,7 +27,7 @@ function Navbar({ uploadButtonHandler }) {
 
   const logout = async () => {
     try {
-      await axios.get("http://localhost:3000/user/logout", {}, { withCredentials: true });
+      await axios.get("https://cloudvault-jk10.onrender.com/user/logout", {}, { withCredentials: true });
   
       localStorage.removeItem("token");
       localStorage.removeItem("username");

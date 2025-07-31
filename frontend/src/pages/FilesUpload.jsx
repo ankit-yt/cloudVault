@@ -14,7 +14,7 @@ function FilesUpload() {
 		console.log(dropboxToken)
 		console.log(formData.get('files'))
 		try {
-			const response = await fetch('http://localhost:3000/dropbox/upload', {
+			const response = await fetch('https://cloudvault-jk10.onrender.com/dropbox/upload', {
 				headers: {
 					Authorization: `Bearer ${localStorage.getItem('username')}`,
 				},

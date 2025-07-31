@@ -30,7 +30,7 @@ function Signup() {
 
 
     axios
-    .post("http://localhost:3000/user/signup", formData, {
+    .post("https://cloudvault-jk10.onrender.com/user/signup", formData, {
       headers: { "Content-Type": "multipart/form-data" },
     })
       .then((r) => {

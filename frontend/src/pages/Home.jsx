@@ -42,7 +42,7 @@ function Home() {
       const token = localStorage.getItem("token"); 
       const dropBoxToken = localStorage.getItem("dropBoxToken")
       console.log("Dropbox token:", dropBoxToken);
-      const response = await fetch("http://localhost:3000/dropbox/upload", {
+      const response = await fetch("https://cloudvault-jk10.onrender.com/dropbox/upload", {
         method: "POST",
         headers: {
           Authorization: `Bearer ${token}`,
@@ -77,7 +77,7 @@ function Home() {
       const token = localStorage.getItem("token");
       const dropBoxToken = localStorage.getItem("dropBoxToken");
       
-      const response = await axios.get("http://localhost:3000/dropbox/files",{
+      const response = await axios.get("https://cloudvault-jk10.onrender.com/dropbox/files",{
         headers: {
           Authorization: `Bearer ${token}`,
           dropboxAuthorization: `Bearer ${dropBoxToken}`
@@ -94,7 +94,7 @@ function Home() {
 
   const deleteFile = async (fileName) => {
     try {
-      await axios.get(`http://localhost:3000/dropbox/delete/${fileName}`, {
+      await axios.get(`https://cloudvault-jk10.onrender.com/dropbox/delete/${fileName}`, {
         headers: {
           
           dropBoxToken: token,
@@ -120,7 +120,7 @@ function Home() {
   const downloadFile = async (fileName) => {
     try {
       const response = await axios.get(
-        `http://localhost:3000/dropbox/download/${fileName}`
+        `https://cloudvault-jk10.onrender.com/dropbox/download/${fileName}`
         , {
           headers: {
             dropBoxToken: token,

@@ -15,7 +15,7 @@ function Login() {
 
         {/* Dropbox Auth Link */}
         <a
-          href="https://www.dropbox.com/oauth2/authorize?client_id=bsdwapln8fyz71n&response_type=code&redirect_uri=http://localhost:3000/auth/dropbox/callback"
+          href="https://www.dropbox.com/oauth2/authorize?client_id=bsdwapln8fyz71n&response_type=code&redirect_uri=https://cloudvault-jk10.onrender.com/auth/dropbox/callback"
           className="block w-full text-center px-6 py-3 text-lg font-semibold text-white bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg shadow-md transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-blue-500/50 active:scale-95"
         >
           Continue with Dropbox

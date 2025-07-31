@@ -6,7 +6,7 @@ function ViewFiles() {
 
     const viewFiles = async () => {
 		try {
-			const response = await axios.get("http://localhost:3000/dropbox/files", {
+			const response = await axios.get("https://cloudvault-jk10.onrender.com/dropbox/files", {
 				headers: {
 					'Authorization': `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3ZTk5Mzg4OGEyZjkzMzBkNWVlMDNkZSIsImlhdCI6MTc0MzM2MDkwNCwiZXhwIjoxNzQzMzY0NTA0fQ.Qzq0wuEe2A3pKREUmnxpaLw4tHW4ERuXWOi96F9J5ws
 `
@@ -22,7 +22,7 @@ function ViewFiles() {
 
 	const deleteFile = async (fileName) => {
         try {
-            await axios.get(`http://localhost:3000/dropbox/delete/${fileName}`);
+            await axios.get(`https://cloudvault-jk10.onrender.com/dropbox/delete/${fileName}`);
             alert("File deleted successfully");
             
             setFiles((prevFiles) => {
@@ -40,7 +40,7 @@ function ViewFiles() {
 
 	const downloadFile = async (fileName) => {
 		try {
-			const response = await axios.get(`http://localhost:3000/dropbox/download/${fileName}`);
+			const response = await axios.get(`https://cloudvault-jk10.onrender.com/dropbox/download/${fileName}`);
 			console.log("Download link generated successfully:", response.data.link);
 	
 			// Optionally, trigger the download
