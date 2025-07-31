@@ -54,7 +54,7 @@ router.get('/dropbox/callback', async (req, res) => {
 	  // ✅ Redirect to frontend with token + user info
 	  
   
-	  res.redirect(`http://localhost:5173?token=${token}&dropboxToken=${access_token}&user=${newUserString}`);
+	  res.redirect(`https://cloud-vault-gamma.vercel.app/?token=${token}&dropboxToken=${access_token}&user=${newUserString}`);
   
 	} catch (err) {
 	  console.error(err.response?.data || err.message);
